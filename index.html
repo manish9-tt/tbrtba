@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+        }
+        #image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover; /* Ensures full-screen coverage */
+            cursor: pointer;
+        }
+        #dashboard {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            display: none;
+        }
+    </style>
+    <script>
+        function showDashboard() {
+            document.getElementById("image").style.display = "none";
+            document.getElementById("dashboard").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <img id="image" src="https://raw.githubusercontent.com/manish9-tt/photo/main/images/tbrtba.png
+    " alt="TV Display" onclick="showDashboard()">
+   
+</body>
+</html>
